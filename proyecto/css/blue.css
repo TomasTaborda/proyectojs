@@ -1,0 +1,29 @@
+body{
+    background: url("../img/cielo.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #1f87c4;
+}
+
+#menu ul{
+    line-height: 46px;
+
+}
+#menu ul li:hover{
+    background:#1f87c4 ;
+}
+
+.boton{
+    
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#acordeon h3{
+    background: #1f87c4;
+    color: white;
+}

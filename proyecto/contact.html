@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Proyecto con Javascript</title>
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    
+    <!--Plugin Validacion-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!--Mis scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <section id="global">
+
+        <!--Cabera-->
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul >
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html" >Sobre Mi</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        
+
+        <!--Contenido-->
+        <section id="content">
+            <div id="box">
+                <!--Carga de formulario de contacto-->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="formulario_contacto">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanumeric">
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" data-validation="alphanumeric">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email">
+
+                    <label for="genero">Genero</label>
+                        <select name="genero" data-validation="required">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+
+                    
+                    <label for="nacimiento">Nacimiento</label>
+                    <input type="text" name="nacimiento" data-validation="date" data-validation-format="dd-mm-yyyy">
+                    
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" data-validation="number">
+
+                    <input type="submit" value="Enviar">
+
+                    
+                </form>
+
+            </div>
+            <aside id="aside">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis arcu ut orci semper ullamcorper. Nulla egestas elit a euismod pellentesque. Phasellus ut felis in ipsum fringilla faucibus non ac leo. Sed ut neque rhoncus, placerat turpis nec, .</p>
+                    <br>
+                    <p id="cerrar"></p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="form_name">
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email">
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <footer >
+        Curso de Javascript por Tomas Taborda
+        <a href="#" class="subir">Ir al Inicio</a>
+    </footer>
+</body>
+</html>

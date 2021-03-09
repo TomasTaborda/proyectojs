@@ -1,0 +1,28 @@
+body{
+    background: url("../img/hojas.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #235E3D;
+}
+#menu ul li:hover{
+    background:#235E3D ;
+}
+#menu ul{
+    line-height: 46px;
+
+}
+
+.boton{
+    
+    background: #00bf8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+#acordeon h3{
+    background: #235E3D;
+    color: white;
+}
+
